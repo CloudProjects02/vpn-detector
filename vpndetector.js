@@ -20,7 +20,7 @@ async function detectarVPN() {
         const ipPublico = respostaIP.data.ip;
 
         // Verificar se é VPN usando um serviço de detecção
-        const respostaVPN = await axios.get(`https://vpnapi.io/api/${ipPublico}?key=978ea433e410475e982e480f6b9327ae`);
+        const respostaVPN = await axios.get(`https://vpnapi.io/api/${ipPublico}?key=SUA_KEY_AQUI`);
         
         console.log('Seu IP público:', ipPublico);
         console.log('País:', respostaVPN.data.location.country);
